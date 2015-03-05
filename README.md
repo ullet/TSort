@@ -7,8 +7,9 @@ editor.
 
 Sort can be configured with various typical options, such as ascending and
 descending alphabetical, and start from specific column. 
-Slightly unusual options are to start sorting at a specific line, perhaps to
-skip over a file header, and to sort blocks of lines.  Block sort groups lines
-and sorts by the first line in each block, keeping each line within the block in
-the original order. Possible use could be to sort a text-based records file
-containing sort key on first line and record fields on next lines in block.
+A slightly unusual feature is the ability to sort blocks of lines.  Block sort
+groups lines and sorts on a specific line within the block but keeping lines
+within each block in the original relative order.  By default sort is on the
+first line in each block, but line within block can be specified via a command
+line parameter (-l). A possible use could be to sort a text-based records file
+containing a fixed set of fields one per line as key-value pairs.
